@@ -5,7 +5,7 @@ $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"]) && isset($_POST["passwd"])) {
-	if (hash("sha512", $_POST["passwd"]) != "8c5fd9edadc3eabf96d86750dd360667907a49969cfbce948696a5be487dfa2eb459e4f82fda36d3e0a40436ba2dfef5fc43ee85718380aeacbb284794e1c084") {
+	if (hash("sha512", $_POST["passwd"]) != "60c55e7f7942bdba7385034085fbaf4240019a38cd165b7e930428e4059acb4d157a231e5ba5d884d71d9f265f571466709215b1a5e1bd6da2d4dc92a59b6f12") {
 		echo("incorrect passwd");
 		exit();
 	}

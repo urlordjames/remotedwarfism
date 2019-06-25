@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_POST["key"])) {
-	echo("either key or username not set");
+	echo("key not set");
 	exit();
 }
 
