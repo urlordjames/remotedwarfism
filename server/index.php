@@ -14,7 +14,7 @@
 			}};
 			request.open("GET", "getimage.php", true);
 			request.send();
-		}, 3000);
+		}, 1000);
 	</script>
 </body>
 </html>
