@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_POST["key"])) {
+if (!isset($_POST["key"]) || !isset($_SESSION["username"])) {
 	echo("key not set");
 	exit();
 }
