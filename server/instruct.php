@@ -11,6 +11,9 @@ if ($_SESSION["username"] != "Jacques") {
 }
 
 $unekey = $_POST["key"];
+
+header("Location: /badia");
+
 $file = fopen("do.txt", "w");
 fwrite($file, $unekey);
 fclose($file);
