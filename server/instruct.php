@@ -6,7 +6,7 @@ if (!isset($_POST["key"]) || !isset($_SESSION["username"])) {
 }
 
 if ($_SESSION["username"] != "Jacques") {
-	echo("not Jacuqes");
+	echo("not Jacques");
 	exit();
 }
 
